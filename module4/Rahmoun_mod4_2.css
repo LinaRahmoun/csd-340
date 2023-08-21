@@ -1,1 +1,46 @@
+/* Apply a CSS grid with three columns for the 3 side-by-side divs */
+#image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px; /* Adjust this value to control the spacing between divs */
+}
+
+/* Give the image-gallery div a margin-top of 10% */
+#image-gallery {
+    margin-top: 10%;
+}
+
+/* Center the h1 text */
+h1 {
+    text-align: center;
+}
+
+/* Center the h3 text (title for each of the image gallery items) */
+h3 {
+    text-align: center;
+}
+
+/* Apply text-align center to the figure tag (this will basically center the image in the div) */
+figure {
+    text-align: center;
+}
+
+/* Apply a font style of italic to the figcaption text and set the font-size to .75em */
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+}
+
+/* Using rgba, add a different color to the h1, h3, and figcaption tags */
+h1 {
+    color: rgba(255, 0, 0, 0.7); /* Red with 70% opacity */
+}
+
+h3 {
+    color: rgba(0, 128, 0, 0.7); /* Green with 70% opacity */
+}
+
+figcaption {
+    color: rgba(0, 0, 255, 0.7); /* Blue with 70% opacity */
+}
 
