@@ -1,1 +1,22 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lina Rahmoun CSD 340 Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="site.css">
+</head>
+<body>
+    <div id="container">
+      
+        <h3>Top 10 Favorite Books</h3>
+        <ol>
+            <li><a href="module-1/Assignment_1.3.html">Book Title 1<img src="images/book1.jpg" alt="Book 1 Cover"></a></li>
+            <li><a href="module-2/Assignment_2.2.html">Book Title 2<img src="images/book2.jpg" alt="Book 2 Cover"></a></li>
+            <li><a href="module-3/Assignment_3.3.html">Book Title 3<img src="images/book3.jpg" alt="Book 3 Cover"></a></li>
+        </ol>
+
+        <!-- ... More content ... -->
+
+    </div>
+</body>
+</html>
