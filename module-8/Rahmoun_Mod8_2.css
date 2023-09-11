@@ -89,6 +89,34 @@ footer a {
     text-decoration: none;
     color: white; /* or your desired color */
 }
+/* Contents of Rahmoun_Mod8_2.css */
+
+#movies {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#movies th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+}
+
+#movies td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+}
+
+.container {
+  margin: 2% 5% 5% 5%;
+  margin-bottom: 100px;
+}
 
 /* footer a:hover */
 footer a:hover {
