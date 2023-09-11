@@ -1,1 +1,96 @@
+/* header element */
+header {
+    background-color: #yourheadercolor;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
+/* h1 */
+h1 {
+    font-weight: 400;
+}
+
+/* navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #yournavbarcolor;
+    border-bottom: 15px solid #yourbordercolor;
+}
+
+/* navbar a */
+#navbar a {
+    float: left;
+    display: block;
+    color: white; /* or your desired color */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* navbar a:hover */
+#navbar a:hover {
+    background-color: #yourhovercolor;
+    color: #yourhovertextcolor;
+}
+
+/* container div */
+#container {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+}
+
+/* card */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
+}
+
+/* card-title */
+.card-title {
+    text-align: center;
+    font-size: 2em;
+    color: #yourcardtitlecolor;
+    font-weight: 400;
+}
+
+/* card-content */
+.card-content {
+    padding: 2px 16px;
+}
+
+/* card:hover */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* footer element */
+footer {
+    background-color: #yourheadercolor; /* Same as header */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* footer p */
+footer p {
+    color: white; /* or your desired color */
+    font-weight: 400;
+    float: right;
+    padding-right: 10px;
+    font-style: italic;
+}
+
+/* footer a */
+footer a {
+    text-decoration: none;
+    color: white; /* or your desired color */
+}
+
+/* footer a:hover */
+footer a:hover {
+    text-decoration: underline;
+}
