@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+
+    <!-- Image Container -->
+    <div id="imageContainer">
+        <img id="image" src="default.jpg" alt="Default Image">
+    </div>
+
+    <!-- User Input -->
+    <label for="imageSelector">Select an image: </label>
+    <select id="imageSelector">
+        <option value="default.jpg">Default Image</option>
+        <option value="image1.jpg">Image 1</option>
+        <option value="image2.jpg">Image 2</option>
+        <option value="image3.jpg">Image 3</option>
+    </select>
+
+    <!-- JavaScript to handle image change -->
+    <script>
+        // Function to change the displayed image when an option is selected
+        function changeImage() {
+            var selector = document.getElementById("imageSelector");
+            var image = document.getElementById("image");
+            var selectedOption = selector.options[selector.selectedIndex];
+            image.src = selectedOption.value;
+            image.alt = selectedOption.text;
+        }
+
+        // Attach the changeImage function to the onchange event of the selector
+        var selector = document.getElementById("imageSelector");
+        selector.onchange = changeImage;
+
+        // Function to handle image click
+        function imageClick() {
+            alert("Image clicked!");
+            // You can add more code here to perform actions when the image is clicked.
+        }
+
+        // Attach the imageClick function to the onclick event of the image
+        var image = document.getElementById("image");
+        image.onclick = imageClick;
+    </script>
+</body>
+</html>
