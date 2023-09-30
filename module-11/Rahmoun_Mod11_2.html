@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+    
+    <input type="text" id="entryText" placeholder="Enter text">
+    <button id="addButton">Add</button>
+    <button id="deleteButton">Delete Last Entry</button>
+    <button id="displayButton">Display</button>
+    
+    <div id="displayArea"></div>
+    
+    <script>
+        // Initialize an empty array to store entries
+        const entries = [];
+
+        // Function to add an element to the array
+        function addEntry() {
+            const entryText = document.getElementById("entryText").value;
+            entries.push(entryText);
+            alert(`Added: "${entryText}" at position ${entries.length}`);
+            document.getElementById("entryText").value = ""; // Clear the input field
+        }
+
+        // Function to delete the last element from the array
+        function deleteLastEntry() {
+            if (entries.length > 0) {
+                const deletedEntry = entries.pop();
+                alert(`Deleted: "${deletedEntry}"`);
+            } else {
+                alert("Array is empty. Nothing to delete.");
+            }
+        }
+
+        // Function to display the contents of the array
+        function displayEntries() {
+            const displayArea = document.getElementById("displayArea");
+            displayArea.innerHTML = ""; // Clear the display area
+
+            for (let i = 0; i < entries.length; i++) {
+                const entryNumber = i + 1;
+                const entryText = entries[i];
+                const entryParagraph = document.createElement("p");
+                entryParagraph.textContent = `${entryNumber}. ${entryText}`;
+                displayArea.appendChild(entryParagraph);
+            }
+        }
+
+        // Event listeners for buttons
+        document.getElementById("addButton").addEventListener("click", addEntry);
+        document.getElementById("deleteButton").addEventListener("click", deleteLastEntry);
+        document.getElementById("displayButton").addEventListener("click", displayEntries);
+    </script>
+</body>
+</html>
